@@ -45,7 +45,7 @@ const App = () => {
         let filterDate = dateFrom + dateTo;
     
         try {
-            const response = await fetch(`https://34.118.66.141/data?${filterDate}`);
+            const response = await fetch(`http://34.118.66.141/data?${filterDate}`);
             const jsonData = await response.json();
     
             // Sprawdź, czy otrzymana odpowiedź jest tablicą
